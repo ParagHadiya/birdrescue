@@ -1,0 +1,13 @@
+{
+    "name": "paraghadiya/birdrescue",
+    "description": "A bird rescue project",
+    "authors": [
+        {
+            "name": "paraghadiya",
+            "email": "hp12computer12@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+} 

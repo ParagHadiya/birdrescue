@@ -1,0 +1,370 @@
+/* General Reset */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Basic styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and menu to the right */
+    align-items: center; /* Center the content vertically */
+    background: linear-gradient(135deg, #cbec0e, #6f42c1);
+    padding: 15px 30px; /* Add some padding for spacing */
+    height: 80px;
+}
+
+/* Left Side Logo */
+nav .logo img {
+    max-width: 300px; /* Adjust the size of the logo */
+    height: 250px;
+    width: 250px;
+}
+
+/* Right Side Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+nav a {
+    color: white; /* White text */
+    padding: 12px 20px;
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for background and hover effects */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: green; /* Green background on hover */
+    color: white; /* Ensure text remains white */
+}
+
+/* Active link styling */
+nav a:active {
+    background-color: darkgreen; /* Darker green when the link is clicked */
+    color: white;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 30px;
+    flex: 1;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c48ce;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Error message */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Sidebar Styles (Fixed for better structure) */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 3px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background-color: #92f313;
+}
+
+/* Table Styles (For future use) */
+.volunteers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #000;
+}
+
+.volunteers-table th, .volunteers-table td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.volunteers-table th {
+    background-color: #5c48ce;
+    color: white;
+}
+
+.volunteers-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.volunteers-table tr:hover {
+    background-color: #ecf0f1;
+}
+
+.volunteers-table a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volunteers-table a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Dashboard (for styling future dashboard container) */
+.dashboard-container {
+    margin-left: 250px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container h2 {
+    color: #34495e;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #5c48ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fd34a9;
+}
+
+
+/* Style for the form box */
+.form-box {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd;   /* Light gray border */
+    border-radius: 8px;       /* Rounded corners */
+    padding: 20px;            /* Padding inside the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px;         /* Limit the width of the form box */
+    margin: 20px auto;        /* Center the box horizontally */
+}
+
+/* Style form inputs inside the box */
+.form-box .form-group {
+    margin-bottom: 15px;      /* Space between fields */
+}
+
+.form-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"] {
+    width: 100%;             /* Full width for inputs */
+    padding: 10px;           /* Inner padding for inputs */
+    border: 1px solid #ccc;  /* Light gray border for inputs */
+    border-radius: 4px;      /* Rounded corners for inputs */
+    box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+.form-box .btn {
+    display: block;
+    width: 100%;             /* Full width button */
+    padding: 10px;
+   
+    color: #fff;             /* White text */
+    border: none;            /* No border */
+    border-radius: 4px;      /* Rounded button corners */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+    .sidebar a:hover {
+        background-color: #1abc9c;
+    }
+
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f4f4f4;
+    }
+
+
+
+
+    
